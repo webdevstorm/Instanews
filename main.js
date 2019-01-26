@@ -3,6 +3,7 @@ import { on } from "cluster";
 // Problem: Retrieve content from the NYT Top Stories API and add it to our site.
 // If we dont get a successful response, let the user know.
 
+
 // 1a. Listen for the select menu to change (watching value)
 // 1b. If select value is "" do nothing and return from the function immediately!
 // 1c. Show a loader and clear out old stories
@@ -19,7 +20,10 @@ $(function() {
     // console.log(section);
 
     // If section is empty, return
+
+  
     // show loader
+    
     // clear stories
 
     //
@@ -27,7 +31,7 @@ $(function() {
     // make our ajax request
     $.ajax({
       method: "GET",
-      url: "#" + section + ".json?api-key=",
+      url: "file:///Users/macuser/Work/project-02/index.html" + section + ".json?api-key=sB8YhnPoN2AgiBOZ3eLPbcGi9E2OGLzn",
       dataType: "json"
     })
       .done(function(response) {
@@ -37,6 +41,12 @@ $(function() {
 
 
           // 1. filter the data in response.results to only include 12 articles with images
+
+      let filteredData = data.results.filter(info => {
+        return info.multimedia[4];
+        }).slice(0, 12);
+
+
           // 2. create .each to run a function for each article
           // 2. check the article has an image
           // 3. for each article - create constants for each image URL, title and link
@@ -47,9 +57,15 @@ $(function() {
       })
       .fail(function() {
         // Do stuff here if it doesn't work out
+        $results.empty();
+        $results.append('<p>Sorry, were having troubles loading the site right now....</p>');
+
       })
       .always(function() {
         // hide the loader
+        $('').hide();
+
+        $r
       });
   });
 });

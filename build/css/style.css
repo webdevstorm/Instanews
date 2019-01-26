@@ -1,0 +1,34 @@
+
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+
+@media (max-width: 599px) {
+   
+    
+  }
+  
+  @media (min-width: 110px) {
+    
+  }
+  
+  @media (min-width: 600px) {
+    .header-container {
+      margin-bottom: 80px;
+      margin-top: 20px;
+      max-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1240px) {
+  }
+  
+  /* ========================= Mobile Responsive End ==================== */
+  /* ========================= Mobile Responsive End ==================== */
+  /* ========================= Mobile Responsive End ==================== */
+  /* ========================= Mobile Responsive End ==================== */
+  
