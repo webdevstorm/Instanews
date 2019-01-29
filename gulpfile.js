@@ -2,7 +2,9 @@
 const gulp = require("gulp");
 const uglifycss = require("gulp-uglifycss");
 const rename = require("gulp-rename");
+
 const browserSync = require("browser-sync").create();
+const eslint = require("gulp-eslint");
 const terser = require("gulp-terser");
 
 const sass = require("gulp-sass");
@@ -20,7 +22,6 @@ gulp.task("sass", function() {
         browsers: ["last 2 versions"]
       })
     )
-    .pipe(gulp.dest("./build/css"))
     .pipe(uglifycss()) // Call the terser function on these files
     .pipe(rename({ extname: ".min.css" })) // Rename the uglified file
     .pipe(gulp.dest("./build/css")); // Where do we put the result?

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":"https://github.com/webdevstorm/Instanews.git",
+  "repository": "https://github.com/webdevstorm/Instanews.git",
   "author": "Sage",
   "license": "ISC",
   "bugs": {
@@ -17,6 +17,7 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",

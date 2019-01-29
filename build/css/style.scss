@@ -1,0 +1,39 @@
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+/* ========================= Mobile Responsive Start ==================== */
+@media (min-width: 480px) {
+  .articles li {
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 110px) {
+  .header {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 599px) {
+
+}
+@media (min-width: 600px) {
+  .header-container {
+    margin-bottom: 80px;
+    margin-top: 20px;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1240px) {
+}
+
+/* ========================= Mobile Responsive End ==================== */
+/* ========================= Mobile Responsive End ==================== */
+/* ========================= Mobile Responsive End ==================== */
+/* ========================= Mobile Responsive End ==================== */
