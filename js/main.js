@@ -43,7 +43,7 @@ $(function() {
 
       // 3c. create .each to run a function for each article//check?
 
-      $.each(data.results, function(key, value) {
+      $.each(filteredData, function(key, value) {
         $(".articles").append(
           "<li> <img src='" +
             value.multimedia[4].url +
