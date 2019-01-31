@@ -7,7 +7,7 @@ $(function() {
   $("#sections").on("change", function() {
     const section = $(this).val();
     console.log(section);
-
+    $('.articles').empty();
     // 1b. If select value is "" do nothing and return from the function immediately!
 
     // 1c. Show a loader and clear out old stories
@@ -65,7 +65,7 @@ $(function() {
           // (Image doesn't exist - do something else.)
         })
         .fail(function() {
-          $results.empty();
+         
           $results.append(
             "<p>Sorry, were having troubles loading the site right now....</p>"
           );
